@@ -3,9 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign In</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .form-control {
+            width: 80%; /* 동일한 너비 설정 */
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        .checkbox {
+            margin: 10px;
+        }
+
+        .btn {
+            width: 80%; /* 동일한 너비 설정 */
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .small-image { /*이미지 스타일*/
+            width: 80px;
+            height: 80px;
+            border-radius: 40%; 
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <img src="https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg" alt="Small Image" class="small-image">
+        <h1>Please Sign In</h1>
+        <form>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email Address" required>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+            <button type="submit" class="btn">Sign In</button>
+            <p class="mt-5 mb-3 text-muted">&copy; 2022-2023</p>
+        </form>
+    </div>
 </body>
 </html>
