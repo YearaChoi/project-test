@@ -3,9 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>전산전자공학부 수면실태조사</title>
 </head>
 <body>
-    
+    <h1>전산전자공학부 수면실태조사</h1>
+    <form>
+        <label>성별을 선택하세요</label>
+        <br>
+        <input type="radio" id="female" name="gender" value="여자">
+        <label for="female">여자</label>
+        <input type="radio" id="male" name="gender" value="남자">
+        <label for="male">남자</label>
+        <br>
+
+        <label for="semester">현재 학기 수를 선택하세요</label>
+        <br>
+        <select id="semester" name="semester" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <br>
+
+        <label for="name">이름을 입력하세요</label>
+        <br>
+        <input type="text" id="name" name="name" required>
+        <br>
+
+        <label for="email">이메일을 입력하세요</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <label>하루 평균 수면시간을 선택하세요</label>
+        <br>
+        <select id="sleep" name="sleep">
+            <option value="4시간">4시간</option>
+            <option value="5시간">5시간</option>
+            <option value="6시간">6시간</option>
+            <option value="7시간">7시간</option>
+            <option value="8시간">8시간</option>
+            <option value="9시간 이상">9시간 이상</option>
+        </select>
+        <br>
+
+        <label>자신의 수면 시간이 적절하다고 생각하십니까?</label>
+        <br>
+        <input type="radio" id="yes" name="sufficientSleep" value="예">
+        <label for="yes">예</label>
+        <input type="radio" id="no" name="sufficientSleep" value="아니오">
+        <label for="no">아니오</label>
+        <br>
+
+        <label for="factors">만약 아니라면, 수면부족의 요인이 무엇이라고 생각하십니까?</label>
+        <br>
+        <textarea id="factors" name="factors" rows="4"></textarea>
+        <br>
+
+        <label for="problems">어떤 요인이 수면 부족을 유발합니까?</label>
+        <br>
+        <input type="checkbox" id="assignments" name="problems" value="과제">
+        <label for="assignments">과제</label>
+        <input type="checkbox" id="quizzes" name="problems" value="퀴즈">
+        <label for="quizzes">퀴즈</label>
+        <input type="checkbox" id="exams" name="problems" value="시험">
+        <label for="exams">시험</label>
+        <input type="checkbox" id="other" name="problems" value="기타">
+        <label for="other">기타</label>
+        <br>
+
+        <label for="otherReason">기타 선택 시, 이유를 입력하세요</label>
+        <br>
+        <textarea id="otherReason" name="otherReason" rows="4"></textarea>
+        <br>
+
+        <label for="suggestions">추가적으로 수면 부족 완화를 위한 건의사항이 있으면 입력하세요</label>
+        <br>
+        <textarea id="suggestions" name="suggestions" rows="4"></textarea>
+        <br>
+
+        <label for="surveyDate">설문한 날짜를 선택하세요</label>
+        <br>
+        <input type="date" id="surveyDate" name="surveyDate" required>
+        <br>
+
+        <input type="submit" value="제출">
+    </form>
 </body>
 </html>
